@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "regen-rewards",
+    "slug": "regen-rewards",
+    "statusBar": {"hidden": true},
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "regenrewards",
+    "ios": {
+      "bundleIdentifier": "com.anonymous.regenrewards",
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.562605607349-23h2hein4ivfv81esqkogp6uhv25d09l"
+            ]
+          }
+        ]
+      },
+      "config": {
+        "googleSignIn": {
+          "reservedClientId":"562605607349-23h2hein4ivfv81esqkogp6uhv25d09l.apps.googleusercontent.com"
+        }
+      }
+    },
+    "newArchEnabled": true,
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.regenrewards",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins" : ["@react-native-google-signin/google-signin"]
+  }
+}
